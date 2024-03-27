@@ -1,0 +1,67 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/leonardobitencourt/Projetos/FinancialSearch/FinancialSearch.csproj": {}
+  },
+  "projects": {
+    "/Users/leonardobitencourt/Projetos/FinancialSearch/FinancialSearch.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/leonardobitencourt/Projetos/FinancialSearch/FinancialSearch.csproj",
+        "projectName": "FinancialSearch",
+        "projectPath": "/Users/leonardobitencourt/Projetos/FinancialSearch/FinancialSearch.csproj",
+        "packagesPath": "/Users/leonardobitencourt/.nuget/packages/",
+        "outputPath": "/Users/leonardobitencourt/Projetos/FinancialSearch/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/leonardobitencourt/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[31.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.406/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

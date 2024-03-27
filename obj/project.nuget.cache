@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "jcbbLEQHeN+95H8kogHoGi6H25eEoN3jLaZ69rWUWEZMuWYmUSchBoJ9AHGlaSPnegBrXCvHZ3xBGW0jg0CyHQ==",
+  "success": true,
+  "projectFilePath": "/Users/leonardobitencourt/Projetos/FinancialSearch/FinancialSearch.csproj",
+  "expectedPackageFiles": [
+    "/Users/leonardobitencourt/.nuget/packages/csvhelper/31.0.2/csvhelper.31.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

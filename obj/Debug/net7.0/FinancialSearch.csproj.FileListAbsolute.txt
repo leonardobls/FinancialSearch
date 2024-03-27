@@ -1,0 +1,17 @@
+/Users/leonardobitencourt/Projetos/FinancialSearch/obj/Debug/net7.0/FinancialSearch.GeneratedMSBuildEditorConfig.editorconfig
+/Users/leonardobitencourt/Projetos/FinancialSearch/obj/Debug/net7.0/FinancialSearch.AssemblyInfoInputs.cache
+/Users/leonardobitencourt/Projetos/FinancialSearch/obj/Debug/net7.0/FinancialSearch.AssemblyInfo.cs
+/Users/leonardobitencourt/Projetos/FinancialSearch/obj/Debug/net7.0/FinancialSearch.csproj.CoreCompileInputs.cache
+/Users/leonardobitencourt/Projetos/FinancialSearch/bin/Debug/net7.0/FinancialSearch
+/Users/leonardobitencourt/Projetos/FinancialSearch/bin/Debug/net7.0/FinancialSearch.deps.json
+/Users/leonardobitencourt/Projetos/FinancialSearch/bin/Debug/net7.0/FinancialSearch.runtimeconfig.json
+/Users/leonardobitencourt/Projetos/FinancialSearch/bin/Debug/net7.0/FinancialSearch.dll
+/Users/leonardobitencourt/Projetos/FinancialSearch/bin/Debug/net7.0/FinancialSearch.pdb
+/Users/leonardobitencourt/Projetos/FinancialSearch/bin/Debug/net7.0/CsvHelper.dll
+/Users/leonardobitencourt/Projetos/FinancialSearch/obj/Debug/net7.0/FinancialSearch.csproj.AssemblyReference.cache
+/Users/leonardobitencourt/Projetos/FinancialSearch/obj/Debug/net7.0/FinancialSearch.csproj.CopyComplete
+/Users/leonardobitencourt/Projetos/FinancialSearch/obj/Debug/net7.0/FinancialSearch.dll
+/Users/leonardobitencourt/Projetos/FinancialSearch/obj/Debug/net7.0/refint/FinancialSearch.dll
+/Users/leonardobitencourt/Projetos/FinancialSearch/obj/Debug/net7.0/FinancialSearch.pdb
+/Users/leonardobitencourt/Projetos/FinancialSearch/obj/Debug/net7.0/FinancialSearch.genruntimeconfig.cache
+/Users/leonardobitencourt/Projetos/FinancialSearch/obj/Debug/net7.0/ref/FinancialSearch.dll
