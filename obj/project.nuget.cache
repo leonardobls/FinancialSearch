@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jcbbLEQHeN+95H8kogHoGi6H25eEoN3jLaZ69rWUWEZMuWYmUSchBoJ9AHGlaSPnegBrXCvHZ3xBGW0jg0CyHQ==",
+  "dgSpecHash": "GCI+nxzNSxvJwbOO8oiTiq8+g5atdWSNt9+HG5fYzixKfk5Mgjr4u6WQbO9eWWPMedcvhJ4arplZ8Wu7Qwx+Yw==",
   "success": true,
-  "projectFilePath": "/Users/leonardobitencourt/Projetos/FinancialSearch/FinancialSearch.csproj",
+  "projectFilePath": "/Users/leonardobitencourt/Aula/FinancialSearch/FinancialSearch.csproj",
   "expectedPackageFiles": [
     "/Users/leonardobitencourt/.nuget/packages/csvhelper/31.0.2/csvhelper.31.0.2.nupkg.sha512"
   ],

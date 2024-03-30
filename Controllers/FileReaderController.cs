@@ -3,9 +3,8 @@
 using System.Globalization;
 using CsvHelper;
 using CsvHelper.Configuration;
-using RedeNeural.DataTransferObjects;
 
-namespace RedeNeural.Controllers
+namespace FinancialSearch.Controllers
 {
     public class FileReaderController
     {

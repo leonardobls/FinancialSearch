@@ -58,11 +58,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/leonardobitencourt/Projetos/FinancialSearch/FinancialSearch.csproj",
+      "projectUniqueName": "/Users/leonardobitencourt/Aula/FinancialSearch/FinancialSearch.csproj",
       "projectName": "FinancialSearch",
-      "projectPath": "/Users/leonardobitencourt/Projetos/FinancialSearch/FinancialSearch.csproj",
+      "projectPath": "/Users/leonardobitencourt/Aula/FinancialSearch/FinancialSearch.csproj",
       "packagesPath": "/Users/leonardobitencourt/.nuget/packages/",
-      "outputPath": "/Users/leonardobitencourt/Projetos/FinancialSearch/obj/",
+      "outputPath": "/Users/leonardobitencourt/Aula/FinancialSearch/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/leonardobitencourt/.nuget/NuGet/NuGet.Config"

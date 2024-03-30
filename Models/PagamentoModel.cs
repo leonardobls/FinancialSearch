@@ -1,4 +1,4 @@
-namespace RedeNeural.Models
+namespace FinancialSearch.Models
 {
     public class PagamentoModel
     {

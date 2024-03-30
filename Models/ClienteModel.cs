@@ -1,7 +1,7 @@
-namespace RedeNeural.DataTransferObjects
+namespace FinancialSearch.Models
 {
 
-    internal class ClientesModel
+    internal class ClienteModel
     {
         public string? Id { get; set; }
 
