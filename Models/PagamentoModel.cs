@@ -4,7 +4,7 @@ namespace FinancialSearch.Models
     {
         public string? Id { get; set; }
 
-        public string? Data { get; set; }
+        public DateTime? Data { get; set; }
 
         public string? CodigoProduto { get; set; }
 

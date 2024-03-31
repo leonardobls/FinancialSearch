@@ -36,9 +36,6 @@ namespace FinancialSystem
                     case "3":
                         acoes.RelatorioCompleto(newClients, newPagamentos);
                         break;
-                    case "4":
-                        Console.WriteLine("Quarta-feira");
-                        break;
                     case "0":
                         Console.WriteLine("Saindo!");
                         return;

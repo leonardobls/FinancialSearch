@@ -80,29 +80,39 @@ namespace FinancialSearch.Controllers
 
         public void RelatorioCompleto(List<ClienteModel> clientes, List<PagamentoModel> pagamentos)
         {
-            // O cliente precisa saber dos valores ordenados por
-            // data com o total a ser recebido e o total recebido
-            // ordenado por dia.
-            var pagamentosEncontrados = pagamentos.Where(pagamento => pagamento.Pago == "f").ToList();
-            var pagamentosOrdenados = pagamentosEncontrados.OrderBy(pagamento => pagamento.Data).ToList();
 
-            if (pagamentosOrdenados.Count > 0)
+            Console.WriteLine("Você deseja:\n0-Consultar apenas as dívidas\n1-Consultar apenas os pagamentos");
+            string result = Console.ReadLine();
+            bool pagos = false;
+            if (result == "1") pagos = true;
+
+
+            var grupoPorDia = pagamentos.OrderBy(pagamento => pagamento.Data).GroupBy(pagamento => pagamento.Data).ToList();
+
+            foreach (var grupo in grupoPorDia)
             {
-                foreach (var p in pagamentosOrdenados)
-                {
-                    Console.WriteLine(p.Data);
-                    // var clienteEncontrado = clientes.Where(c => c.Id == p.Id).FirstOrDefault();
+                float soma = 0;
 
-                    // if (clienteEncontrado != null)
-                    // {
-                    //     Console.WriteLine($"Cliente: {clienteEncontrado.Nome}\tValor: {String.Format("{0:0.00}", p.Valor)}\tData: {p.Data}");
-                    // }
-                    // else
-                    // {
-                    //     Console.WriteLine($"Cliente: Não identificado\tValor: {String.Format("{0:0.00}", p.Valor)}\tData: {p.Data}");
-                    // }
+                foreach (var dia in grupo)
+                {
+                    if (dia.Pago == "f" && pagos == false)
+                    {
+                        soma += float.Parse(dia.Valor);
+                    }
+                    else if (dia.Pago == "t" && pagos == true)
+                    {
+                        soma += float.Parse(dia.Valor);
+                    }
                 }
+                if (pagos == false)
+                    Console.WriteLine($"\tDia: {grupo.First().Data}\tValor total das dívidas {soma}");
+                else
+                    Console.WriteLine($"\tDia: {grupo.First().Data}\tValor total dos pagamentos {soma}");
+
+
             }
+
+            Console.WriteLine("\n");
         }
     }
 }
