@@ -36,21 +36,18 @@ namespace FinancialSearch.Controllers
 
                 if (pagamento.Data.Length < 8)
                 {
-
                     string ano = pagamento.Data.Substring(pagamento.Data.Length - 4);
                     string mes = pagamento.Data.Substring(pagamento.Data.Length - 6, 2);
                     string dia = pagamento.Data.Length == 7 ? pagamento.Data.Substring(0, 1) : pagamento.Data.Substring(0, 2);
                     if (dia.Length == 1)
                     {
                         dia = "0" + dia;
+                        var teste = 0;
                     }
-                    pagamento.Data = dia + "/" + mes + "/" + ano;
+                    pagamento.Data = dia + mes + ano;
                 }
 
-                DateTime data = DateTime.Now;
-                bool parsed = DateTime.TryParse(pagamento.Data, out data);
-
-
+                DateTime data = DateTime.ParseExact(pagamento.Data, "ddMMyyyy", CultureInfo.InvariantCulture);
 
                 newPagamentos.Add(new PagamentoModel()
                 {
