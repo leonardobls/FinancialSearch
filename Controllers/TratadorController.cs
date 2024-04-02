@@ -54,7 +54,7 @@ namespace FinancialSearch.Controllers
                     Id = pagamento.Id,
                     Data = data,
                     CodigoProduto = pagamento.CodigoProduto,
-                    Valor = pagamento.Valor,
+                    Valor = !string.IsNullOrEmpty(pagamento.Valor) ? Math.Round(double.Parse(pagamento.Valor, CultureInfo.InvariantCulture), 2) : (double?)null,
                     Pago = pagamento.Pago,
                 });
             }

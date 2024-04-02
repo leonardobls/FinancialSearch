@@ -9,7 +9,7 @@ namespace FinancialSearch.Models
 
         public string? CodigoProduto { get; set; }
 
-        public string? Valor { get; set; }
+        public double? Valor { get; set; }
 
         public string? Pago { get; set; }
 

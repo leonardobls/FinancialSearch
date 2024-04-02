@@ -57,7 +57,7 @@ namespace FinancialSearch.Controllers
             Console.WriteLine("Digite o valor mínimo da dívida (se quiser visualizar todas as dívidas no sistema, digite 0): ");
             string valor = Console.ReadLine();
 
-            var pagamentosEncontrados = pagamentos.Where(pagamento => double.Parse(pagamento.Valor, CultureInfo.InvariantCulture.NumberFormat) >= double.Parse(valor, CultureInfo.InvariantCulture.NumberFormat) && pagamento.Pago == "f").ToList();
+            var pagamentosEncontrados = pagamentos.Where(pagamento => pagamento.Valor >= double.Parse(valor) && pagamento.Pago == "f").ToList();
 
             if (pagamentosEncontrados.Count > 0)
             {
@@ -67,7 +67,7 @@ namespace FinancialSearch.Controllers
 
                     if (clienteEncontrado != null)
                     {
-                        Console.WriteLine($"Cliente: {clienteEncontrado.Nome}\tValor: {double.Parse(p.Valor, CultureInfo.InvariantCulture.NumberFormat)}\tData: {p.Data}");
+                        Console.WriteLine($"Cliente: {clienteEncontrado.Nome}\tValor: {p.Valor}\tData: {p.Data}");
                     }
                     else
                     {
@@ -91,23 +91,23 @@ namespace FinancialSearch.Controllers
 
             foreach (var grupo in grupoPorDia)
             {
-                float soma = 0;
+                double? soma = 0;
 
                 foreach (var dia in grupo)
                 {
                     if (dia.Pago == "f" && pagos == false)
                     {
-                        soma += float.Parse(dia.Valor);
+                        soma += dia.Valor;
                     }
                     else if (dia.Pago == "t" && pagos == true)
                     {
-                        soma += float.Parse(dia.Valor);
+                        soma += dia.Valor;
                     }
                 }
-                if (pagos == false)
-                    Console.WriteLine($"\tDia: {grupo.First().Data}\tValor total das dívidas {soma}");
-                else
-                    Console.WriteLine($"\tDia: {grupo.First().Data}\tValor total dos pagamentos {soma}");
+                if (pagos == false && soma > 0)
+                    Console.WriteLine($"\tDia: {grupo.First().Data}\tValor total das dívidas {soma.Value.ToString("N2")}");
+                else if (pagos == true && soma > 0)
+                    Console.WriteLine($"\tDia: {grupo.First().Data}\tValor total dos pagamentos {soma.Value.ToString("N2")}");
 
 
             }
