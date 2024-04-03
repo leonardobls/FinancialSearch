@@ -5,7 +5,6 @@ namespace FinancialSystem
 {
     internal class Program
     {
-
         static void Main(string[] args)
         {
             List<dynamic> clientes = FileReaderController.GetContent("Arquivos/clientes.txt");
@@ -45,12 +44,7 @@ namespace FinancialSystem
                         break;
                 }
             }
-
         }
-
-
-
-
     }
 }
 
