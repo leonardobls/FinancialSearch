@@ -48,9 +48,21 @@
               "target": "Package",
               "version": "[7.0.5, )"
             },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.9.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[7.0.4, )"
+            },
+            "Nunit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.5.0, )"
             }
           },
           "imports": [

@@ -1,7 +1,7 @@
-﻿using FinancialSearch.Controllers;
-using FinancialSearch.Models;
+﻿using BuscadorFinanceiro.Controllers;
+using BuscadorFinanceiro.Models;
 
-namespace FinancialSystem
+namespace BuscadorFinanceiro
 {
     internal class Program
     {
@@ -38,7 +38,6 @@ namespace FinancialSystem
                     case "0":
                         Console.WriteLine("Saindo!");
                         return;
-                        break;
                     default:
                         Console.WriteLine("Valor inválido");
                         break;
